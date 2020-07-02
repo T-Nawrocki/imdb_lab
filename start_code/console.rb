@@ -31,6 +31,9 @@ casting3.save
 casting3.fee = "25"
 casting3.update
 
+star3.first_name = "Elizabeth"
+star3.update
+
 star2.delete
 movie2.delete
 casting2.delete
