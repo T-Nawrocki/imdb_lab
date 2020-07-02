@@ -18,6 +18,9 @@ movie2.save
 
 casting1 = Casting.new({"movie_id" => movie1.id, "star_id" => star1.id, "fee" => "10"})
 casting1.save
+casting2 = Casting.new({"movie_id" => movie1.id, "star_id" => star1.id, "fee" => "10"})
+casting2.save
 
 star2.delete
 movie2.delete
+casting2.delete
