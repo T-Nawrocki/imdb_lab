@@ -13,8 +13,11 @@ star2.save
 
 movie1 = Movie.new({"title" => "Batman and Robin", "genre" => "superhero"})
 movie1.save
+movie2 = Movie.new({"title" => "Pirates of the Carribbean", "genre" => "action"})
+movie2.save
 
 casting1 = Casting.new({"movie_id" => movie1.id, "star_id" => star1.id, "fee" => "10"})
 casting1.save
 
 star2.delete
+movie2.delete
