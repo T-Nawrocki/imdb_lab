@@ -27,6 +27,8 @@ casting2 = Casting.new({"movie_id" => movie1.id, "star_id" => star1.id, "fee" =>
 casting2.save
 casting3 = Casting.new({"movie_id" => movie3.id, "star_id" => star3.id, "fee" => "50"})
 casting3.save
+casting4 = Casting.new({"movie_id" => movie3.id, "star_id" => star1.id, "fee" => "50"})
+casting4.save
 
 casting3.fee = "25"
 casting3.update

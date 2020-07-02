@@ -1,4 +1,5 @@
 require_relative("../db/sql_runner")
+require_relative("movie")
 
 class Star
 
@@ -55,6 +56,18 @@ class Star
         WHERE id = $3"
         values = [@first_name, @last_name, @id]
         SqlRunner.run(sql, values)
+    end
+
+
+    def movies
+        sql = "SELECT movies.* FROM
+        movies INNER JOIN castings
+        ON movies.id = castings.movie_id
+        WHERE star_id = $1"
+        values = [@id]
+
+        result = SqlRunner.run(sql, values)
+        return Movie.map_all(result)  
     end
 
 end
