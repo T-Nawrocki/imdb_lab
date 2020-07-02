@@ -11,6 +11,8 @@ star1 = Star.new({"first_name" => "George", "last_name" => "Clooney"})
 star1.save
 star2 = Star.new({"first_name" => "Johnny", "last_name" => "Depp"})
 star2.save
+star3 = Star.new({"first_name" => "Elisabeth", "last_name" => "Moss"})
+star3.save
 
 movie1 = Movie.new({"title" => "Batman and Robin", "genre" => "superhero"})
 movie1.save

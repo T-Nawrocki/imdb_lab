@@ -36,4 +36,16 @@ class Star
         SqlRunner.run(sql, values)
     end
 
+
+    def self.map_all(data)
+        return data.map {|star| Star.new(star)}
+    end
+
+    def self.find_all
+        sql = "SELECT * FROM stars"
+        result = SqlRunner.run(sql)
+        return self.map_all(result)
+    end
+     
+
 end
