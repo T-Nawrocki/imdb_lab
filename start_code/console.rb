@@ -34,6 +34,9 @@ casting3.update
 star3.first_name = "Elizabeth"
 star3.update
 
+movie1.title = "Oceans 11"
+movie1.update
+
 star2.delete
 movie2.delete
 casting2.delete
